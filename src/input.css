@@ -1,0 +1,4 @@
+/* Tailwind Directives: The 'Unknown at-rule' warnings in your IDE can be ignored; they are processed by the Tailwind CLI into the final output.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

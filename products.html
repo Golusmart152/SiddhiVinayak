@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Shri Siddhivinayak Enterprises - Product Catalog</title>
+  <link rel="icon" href="images/Logo/ssve_pages-to-jpg-0001-removebg-preview.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/Logo/ssve_pages-to-jpg-0001-removebg-preview.png">
+  
+  <!-- Tailwind CSS: Static Build for Production -->
+  <link rel="stylesheet" href="css/output.css">
+  
+  <!-- Font Integration -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Restore saved dark/light mode instantly before render (prevents flash) -->
+  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.classList.add('dark');</script>
+  
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 10px; }
+    .dark .custom-scrollbar::-webkit-scrollbar-thumb { background: #475569; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+  <link rel="stylesheet" href="css/darkmode-products.css">
+</head>
+<body class="bg-background-light font-sans text-slate-800 transition-colors duration-300 antialiased overflow-x-hidden">
+  
+  <!-- Global Header Placeholder -->
+  <div id="header-container"></div>
+  
+  <!-- Catalog Specific Content -->
+  <main id="catalog-container" class="pt-32 pb-24 min-h-screen"></main>
+  
+  <!-- Global Footer Placeholder -->
+  <div id="footer-container"></div>
+  
+  <!-- Component Scripts -->
+  <script src="globals.js"></script>
+  <script src="components/header.js"></script>
+  <script src="components/product_catalog.js"></script>
+  <script src="components/footer.js"></script>
+  <script src="components/floating_contact.js"></script>
+</body>
+</html>
