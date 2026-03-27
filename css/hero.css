@@ -1,0 +1,4 @@
+/* hero.css - Hero Section Styles */
+.hero-gradient {
+  background: radial-gradient(circle at top right, rgba(26, 34, 127, 0.4) 0%, rgba(15, 23, 42, 1) 70%);
+}

@@ -1,0 +1,144 @@
+/* =============================================================
+   darkmode-products.css — Dark Mode for products.html
+   Applied when <html class="dark"> is set via JS toggle.
+
+   RULE: Only background, text, and border COLORS change.
+         Font families, sizes, weights, spacing = NEVER touched.
+   ============================================================= */
+
+/* ─── 1. PAGE BASE ───────────────────────────────────────── */
+html.dark body {
+  background-color: #0f172a;   /* deep navy */
+  color: #e2e8f0;              /* slate-200 — default readable text */
+}
+
+/* ─── 2. HEADER (shared with index — same rules apply) ────── */
+/* Top bar bg-secondary (#1a227f) — dark enough, white text ✅  */
+/* Main nav bg-slate-900 — dark, white text ✅                  */
+/* Mobile drawer bg-slate-800 — dark, white text ✅             */
+
+/* ─── 3. CATALOG MAIN CONTAINER ─────────────────────────── */
+html.dark main#catalog-container {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* ─── 4. CATEGORY SECTION WRAPPER ───────────────────────── */
+/* Each section uses body background — no explicit bg class  */
+html.dark main#catalog-container section {
+  background-color: #0f172a;
+}
+
+/* ─── 5. SECTION HEADINGS ────────────────────────────────── */
+/* Section category name: text-slate-900 → visible light gray */
+html.dark main#catalog-container h2 {
+  color: #f1f5f9;              /* slate-100 — bright, readable */
+}
+html.dark main#catalog-container h3 {
+  color: #f1f5f9;
+}
+
+/* Category label badge above heading */
+html.dark main#catalog-container .text-secondary {
+  color: #fbbf24;              /* primary yellow — stands out on dark */
+}
+
+/* Section divider line (border-t border-slate-200) */
+html.dark main#catalog-container .border-slate-200,
+html.dark main#catalog-container .border-slate-100 {
+  border-color: #1e293b;
+}
+
+/* ─── 6. PRODUCT CARDS ───────────────────────────────────── */
+/* Card background: white → dark card */
+html.dark main#catalog-container .bg-white {
+  background-color: #1e293b;   /* slate-800 equivalent */
+}
+
+/* Card border */
+html.dark main#catalog-container .border-slate-200 {
+  border-color: #334155;       /* slate-700 — subtle visible border */
+}
+
+/* Product name inside card: text-slate-900 → light */
+html.dark main#catalog-container .text-slate-900 {
+  color: #f1f5f9;
+}
+
+/* Product price: text-primary (#fbbf24) — yellow, visible ✅ */
+
+/* Product description / spec text */
+html.dark main#catalog-container .text-slate-600 {
+  color: #94a3b8;              /* slate-400 — readable on dark */
+}
+html.dark main#catalog-container .text-slate-500 {
+  color: #64748b;
+}
+
+/* ─── 7. "VIEW ON INDIAMART" BUTTON inside cards ────────── */
+/* bg-slate-50 hover:bg-secondary — dark slate bg, yellow/navy hover */
+html.dark main#catalog-container .bg-slate-50 {
+  background-color: #273044;   /* slightly lighter dark for button */
+  color: #cbd5e1;              /* slate-300 — button text readable */
+}
+html.dark main#catalog-container .text-slate-700 {
+  color: #cbd5e1;
+}
+
+/* ─── 8. PRODUCT IMAGE AREA ──────────────────────────────── */
+/* Image containers — keep a neutral dark bg when image loads */
+html.dark main#catalog-container .bg-slate-100 {
+  background-color: #1e293b;
+}
+
+/* ─── 9. SPEC / DESCRIPTION BLOCK ───────────────────────── */
+/* border-primary (yellow) on .border-l-4 stays unchanged ✅ */
+html.dark main#catalog-container .bg-slate-50.border-l-4 {
+  background-color: #1e293b;
+}
+
+/* ─── 10. "GET IN TOUCH / INDIAMART" CTA BUTTONS ──────────  */
+/* bg-primary text-secondary = yellow button, dark text — ✅  */
+/* bg-secondary text-white = navy button, white text — ✅      */
+
+/* ─── 11. FOOTER ─────────────────────────────────────────── */
+/* bg-slate-950 — very dark, all text slate-300/400 ✅         */
+html.dark footer.bg-slate-950 {
+  background-color: #060c18;
+}
+html.dark footer .bg-slate-800 {
+  background-color: #0f172a;
+}
+
+/* ─── 12. THEME TOGGLE BUTTON ───────────────────────────── */
+#theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fbbf24;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+#theme-toggle:hover {
+  background: rgba(251, 191, 36, 0.2);
+  transform: scale(1.1);
+}
+#theme-toggle .icon-sun,
+#theme-toggle .icon-moon {
+  font-size: 20px;
+  line-height: 1;
+  display: block;
+}
+/* LIGHT MODE → Show Sun */
+#theme-toggle .icon-moon { display: none; }
+#theme-toggle .icon-sun  { display: block; }
+/* DARK MODE → Show Moon */
+html.dark #theme-toggle .icon-sun  { display: none; }
+html.dark #theme-toggle .icon-moon { display: block; }

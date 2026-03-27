@@ -1,0 +1,137 @@
+/* =============================================================
+   darkmode-index.css — Dark Mode for index.html
+   Applied when <html class="dark"> is set via JS toggle.
+   
+   RULE: Only background, text, and border COLORS change.
+         Font families, sizes, weights, spacing = NEVER touched.
+   
+   Most sections already use Tailwind dark: variants inline.
+   This file handles any gaps + global base overrides.
+   ============================================================= */
+
+/* ─── 1. PAGE BASE ───────────────────────────────────────── */
+html.dark body {
+  background-color: #0f172a;   /* deep navy — matches bg-background-dark */
+  color: #e2e8f0;              /* slate-200 — default readable text */
+}
+
+/* ─── 2. TOP CONTACT BAR (header top strip) ─────────────── */
+/* bg-secondary (#1a227f) stays — it's already dark enough */
+/* Text and icons inside are white — perfectly visible ✅  */
+
+/* ─── 3. MAIN NAV (bg-slate-900) ────────────────────────── */
+/* bg-slate-900 = #0f172a in dark — already dark ✅         */
+/* White text on dark nav — perfectly visible ✅            */
+
+/* ─── 4. HERO SECTION ────────────────────────────────────── */
+/* Uses bg-brandDark (#1A1A1A) with full-bleed dark image.  */
+/* All text is white/gold — stays perfectly visible ✅       */
+
+/* ─── 5. DISTRIBUTORS SECTION ───────────────────────────── */
+/* Section bg: bg-white dark:bg-slate-900 (inline) ✅       */
+/* Gradient masks use dark:from-slate-900 (inline) ✅       */
+/* Brand text uses dark:text-slate-200 / dark:text-primary ✅ */
+html.dark [data-purpose="distributors-section"] {
+  background-color: #0f172a;
+  border-color: #1e293b;
+}
+
+/* ─── 6. PRODUCTS SECTION (index featured categories) ────── */
+/* Section: bg-background-light dark:bg-background-dark ✅  */
+/* Cards: bg-white dark:bg-slate-900 ✅                     */
+/* Card text: dark:text-slate-100, dark:text-slate-400 ✅    */
+/* Filter buttons: dark:bg-slate-800 dark:text-slate-300 ✅  */
+/* Bottom border: dark:border-slate-800 ✅                   */
+
+/* ─── 7. SETUP GALLERY & INFRASTRUCTURE ─────────────────── */
+/* Gallery cards: bg-white dark:bg-slate-800 ✅              */
+/* Borders: dark:border-slate-700 ✅                         */
+/* Text overlays on images are white on dark gradient ✅     */
+/* Section headings: dark:text-white / dark:text-slate-400 ✅ */
+/* Navigation arrow buttons: dark:border-slate-700 ✅        */
+
+/* ─── 8. FOUNDER SECTION ─────────────────────────────────── */
+/* Section bg: body bg (#0f172a) — no explicit bg class used */
+html.dark #founder-container section {
+  background-color: #0f172a;    /* same as body in dark — blends seamlessly */
+}
+/* Founder image circular frame border: dark:border-slate-800 ✅ */
+/* h2 heading: dark:text-slate-100 ✅                            */
+/* Body text: dark:text-slate-400 ✅                             */
+/* Feature sub-headings: dark:text-slate-200 ✅                  */
+/* Border divider: dark:border-slate-800 ✅                      */
+/* "Leadership & Vision" badge uses accent/10 — fine in dark ✅  */
+
+/* ─── 9. ABOUT SECTION ───────────────────────────────────── */
+/* Section: bg-white dark:bg-slate-900 ✅                      */
+/* Border: dark:border-slate-800 ✅                             */
+/* Image bg: dark:bg-slate-800 ✅                               */
+/* "Established 2012" card: dark:bg-slate-900 dark:border-slate-800 ✅ */
+/* Heading: dark:text-slate-100 ✅                              */
+/* Body text: dark:text-slate-400 ✅                            */
+/* Authorization block: dark:bg-slate-800/80 ✅                 */
+/* Authorization text: dark:text-slate-200 ✅                   */
+/* "Hero Award" strip: bg-secondary with white text ✅          */
+
+/* ─── 10. AWARDS SECTION ─────────────────────────────────── */
+/* Section bg: inherits body (#0f172a) — no explicit bg class */
+html.dark #awards-container section {
+  background-color: #0f172a;
+}
+/* Icon: dark:text-primary ✅                                   */
+/* Heading: dark:text-slate-100 ✅                              */
+/* Subtext: dark:text-slate-400 ✅                              */
+/* Cards: border dark:border-slate-800 ✅                       */
+/* Card image bg: dark:bg-slate-800 ✅                          */
+/* Card hover overlay: bg-secondary/90 with white text ✅       */
+
+/* ─── 11. CONTACT SECTION ────────────────────────────────── */
+/* Section: bg-slate-50 dark:bg-slate-900/50 ✅                */
+/* Heading: dark:text-slate-100 ✅                              */
+/* Office card: bg-white dark:bg-slate-800 ✅                   */
+/* Office text: dark:text-slate-100 / dark:text-slate-400 ✅    */
+/* Branch cards: bg-white dark:bg-slate-800 ✅                  */
+/* Map area bg: bg-slate-200 */
+html.dark section#contact .bg-slate-200 {
+  background-color: #334155;    /* visible dark slate instead of light grey */
+}
+/* Contact form: bg-secondary — dark blue, white text ✅        */
+
+/* ─── 12. FOOTER ─────────────────────────────────────────── */
+/* bg-slate-950 — already very dark ✅                          */
+/* All text uses text-slate-300/400/500 — visible on dark ✅    */
+/* Social icons: bg-slate-800, hover:bg-primary ✅              */
+
+/* ─── 13. THEME TOGGLE BUTTON ───────────────────────────── */
+#theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fbbf24;              /* primary yellow — always visible on dark nav */
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+#theme-toggle:hover {
+  background: rgba(251, 191, 36, 0.2);
+  transform: scale(1.1);
+}
+/* Icon size — same as rest of nav icons, no size change */
+#theme-toggle .icon-sun,
+#theme-toggle .icon-moon {
+  font-size: 20px;
+  line-height: 1;
+  display: block;
+}
+/* LIGHT MODE → Show Sun (click to go dark) */
+#theme-toggle .icon-moon { display: none; }
+#theme-toggle .icon-sun  { display: block; }
+/* DARK MODE → Show Moon (click to go light) */
+html.dark #theme-toggle .icon-sun  { display: none; }
+html.dark #theme-toggle .icon-moon { display: block; }

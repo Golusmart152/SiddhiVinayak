@@ -1,0 +1,6 @@
+/* main.css - Global Styles — Light theme is the default */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f6f6;
+  color: #1e293b;
+}
