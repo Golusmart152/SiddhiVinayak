@@ -83,7 +83,7 @@ const headerHTML = `
           <div class="flex flex-col leading-tight min-w-0">
             <span class="text-[11px] sm:text-base md:text-lg font-black tracking-tight uppercase truncate"
                   style="background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: 0.04em;">
-              Shri Siddhivinayak
+              Shri Siddhivinayak&trade;
             </span>
             <span class="text-[8px] md:text-[14px] font-black tracking-[0.15em] sm:tracking-[0.3em] uppercase text-[#1a227f] dark:text-white/90">
               Enterprises
@@ -160,7 +160,7 @@ const headerHTML = `
          <div class="flex flex-col leading-tight">
            <span class="text-sm font-black uppercase tracking-tight"
                  style="background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: 0.04em;">
-             Shri Siddhivinayak
+             Shri Siddhivinayak&trade;
            </span>
            <span class="text-[9px] font-black uppercase tracking-[0.3em] text-[#1a227f] dark:text-white/80">
              Enterprises

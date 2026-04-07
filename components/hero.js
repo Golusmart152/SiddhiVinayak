@@ -41,6 +41,9 @@ const heroHTML = `
            <img src="images/Logo/ssve_pages-to-jpg-0001-removebg-preview.png" 
                 alt="Shri Siddhivinayak Enterprises Logo" 
                 class="w-full h-full object-contain filter drop-shadow-[0_0_30px_rgba(217,35,35,0.4)] md:drop-shadow-[0_0_50px_rgba(217,35,35,0.4)]" />
+           <!-- Trademark Badge Overlay -->
+           <div class="absolute bg-primary text-secondary font-black rounded-full shadow-lg border-2 border-secondary flex items-center justify-center transform rotate-12 group-hover:rotate-0 transition-all duration-500 pointer-events-none z-30" 
+                style="top: 24px; right: -24px; width: 36px; height: 36px; font-size: 15px; line-height: 1;">TM</div>
         </div>
       </div>
       
@@ -48,7 +51,7 @@ const heroHTML = `
         <h1 class="flex flex-col items-center leading-tight">
           <span class="text-3xl sm:text-5xl lg:text-7xl font-black tracking-tight uppercase"
                 style="background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: 0.04em;">
-            Shri Siddhivinayak
+            Shri Siddhivinayak&trade;
           </span>
           <span class="text-[14px] xs:text-base sm:text-2xl md:text-3xl font-black tracking-[0.25em] sm:tracking-[0.4em] uppercase text-[#1a227f] dark:text-white/90 mt-2">
             Enterprises

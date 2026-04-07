@@ -64,21 +64,15 @@ const categoriesInfo = [
     name: "Air Compressors",
     products: [
       { name: "Air Compressor 5HP", price: "₹ 72,000", image: imImg, spec: imDesc },
-      { name: "Screw Air Compressor", price: "₹ 58,000", image: imImg, spec: imDesc },
       { name: "Compressor", price: "₹ 55,000", image: imImg, spec: "Production Capacity: 220 Ltr. Tank Capacity. " + imDesc },
       { name: "3 Hp Air Compressor", price: "₹ 51,000", image: imImg, spec: imDesc },
-      { name: "Air Compressor 2HP", price: "₹ 38,500", image: imImg, spec: imDesc },
-      { name: "Industrial Air Compressor", price: "Get Quote", image: imImg, spec: imDesc },
-      { name: "Piston Air Compressor", price: "Get Quote", image: "https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=400&q=80", spec: imDesc }
+      { name: "Air Compressor 2HP", price: "₹ 38,500", image: imImg, spec: imDesc }
     ]
   },
   { 
     id: "high-pressure-washers", 
     name: "High Pressure Washers",
     products: [
-      { name: "KARCHER HDS 8/18 4 M", price: "₹ 3,95,274", image: "images/karcher-hds-8-18-4-m-500x500.webp", spec: washerDesc },
-      { name: "Karcher HDS 8/17 C", price: "₹ 1,35,000", image: "images/karcher-high-pressure-washer-hds-8-17-c-500x500.webp", spec: washerDesc },
-      { name: "Karcher High Pressure Car Washer", price: "₹ 1,10,438", image: "images/kar15202090-500x500.webp", spec: "Includes 850mm stainless steel spray lance and AVT systems. " + washerDesc },
       { name: "Karcher Car Washer", price: "₹ 91,080", image: "images/karcher-hd-6-15-4-kap-500x500-500x500.webp", spec: washerDesc },
       { name: "Karcher Puzzi 10/1 Plus", price: "₹ 71,628", image: "images/karcher-puzzi-10-1-500x500.webp", spec: "Specialized Carpet Vacuum Extraction capabilities. " + washerDesc },
       { name: "Karcher HD 5/11 Cage", price: "₹ 34,850", image: "images/karcher-hd-6-15-4-kap-500x500-500x500.webp", spec: washerDesc },
@@ -161,9 +155,7 @@ const categoriesInfo = [
     id: "pressure-gauges", 
     name: "Pressure Gauges",
     products: [
-      { name: "Tyre Pressure Gauge Dail Type", price: "₹ 3,200", image: gaugeImg, spec: gaugeDesc },
-      { name: "Digital Tyre Pressure Gauge", price: "₹ 6,500", image: gaugeImg, spec: gaugeDesc },
-      { name: "Compression Testing Gauge", price: "Get Quote", image: gaugeImg, spec: gaugeDesc }
+      { name: "Digital Tyre Pressure Gauge", price: "₹ 6,500", image: gaugeImg, spec: gaugeDesc }
     ]
   },
   { 

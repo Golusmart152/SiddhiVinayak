@@ -18,7 +18,7 @@ const footerHTML = `
           <div class="flex flex-col leading-tight">
             <span class="text-base md:text-lg font-black tracking-tight uppercase truncate"
                   style="background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: 0.04em;">
-              Shri Siddhivinayak
+              Shri Siddhivinayak&trade;
             </span>
             <span class="text-[11px] md:text-[14px] font-black tracking-[0.3em] uppercase text-white/90">
               Enterprises
@@ -100,7 +100,7 @@ const footerHTML = `
 
     <!-- Copyright Bar -->
     <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-xs font-semibold text-white/50 uppercase tracking-wider text-center">
-      <p>&copy; 2026 Shri Siddhivinayak Enterprises. All Rights Reserved.</p>
+      <p>&copy; 2026 Shri Siddhivinayak&trade; Enterprises. All Rights Reserved.</p>
     </div>
   </div>
 </footer>
