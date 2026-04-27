@@ -75,9 +75,10 @@ const categoriesInfo = [
     products: [
       { name: "Karcher Car Washer", price: "₹ 91,080", image: "images/karcher-hd-6-15-4-kap-500x500-500x500.webp", spec: washerDesc },
       { name: "Karcher Puzzi 10/1 Plus", price: "₹ 71,628", image: "images/karcher-puzzi-10-1-500x500.webp", spec: "Specialized Carpet Vacuum Extraction capabilities. " + washerDesc },
-      { name: "Karcher HD 5/11 Cage", price: "₹ 34,850", image: "images/karcher-hd-6-15-4-kap-500x500-500x500.webp", spec: washerDesc },
-      { name: "High Pressure Washer Hd 7 16 4 Cage Classic", price: "Get Quote", image: washerImg, spec: washerDesc },
-      { name: "Car High Pressure Washer", price: "Get Quote", image: washerImg, spec: washerDesc },
+      { name: "Karcher HD 5/11 Cage", price: "₹ 34,850", image: "images/kar15202090-500x500.webp", spec: washerDesc },
+      { name: "High Pressure Washer Hd 7 16 4 Cage Classic", price: "Get Quote", image: "images/karcher 7 16 waher.jpeg", spec: washerDesc },
+      { name: "Karcher High Pressure Washer HDS 8/17 C", price: "Get Quote", image: "images/karcher-high-pressure-washer-hds-8-17-c-500x500.webp", spec: washerDesc },
+      { name: "Karcher HDS 8/18-4 M High Pressure Washer", price: "Get Quote", image: "images/karcher-hds-8-18-4-m-500x500.webp", spec: washerDesc },
       { name: "Bike Washer Pump", price: "₹ 32,000", image: "images/img_20161214_124425-500x500.webp", spec: washerDesc }
     ]
   },
@@ -119,9 +120,9 @@ const categoriesInfo = [
     id: "vacuum-cleaners", 
     name: "Wet & Dry Vacuum Cleaners",
     products: [
-      { name: "Karcher NT 65/2 Wet & Dry Heavy Duty", price: "₹ 65,737", image: vacImg, spec: vacDesc },
-      { name: "KARCHER NT 27/1 Wet & Dry Vacuum Cleaner", price: "₹ 23,694", image: vacImg, spec: "Production Capacity: 27 Ltr. " + vacDesc },
-      { name: "KARCHER NT 22/1 Wet & Dry Vacuum Cleaner", price: "₹ 17,434", image: vacImg, spec: "Production Capacity: 22 Ltr. " + vacDesc }
+      { name: "Karcher NT 65/2 Wet & Dry Heavy Duty", price: "₹ 65,737", image: "images/karcher 65 2.jpg", spec: vacDesc },
+      { name: "KARCHER NT 27/1 Wet & Dry Vacuum Cleaner", price: "₹ 23,694", image: "images/karcher 27 1 cleaner.jpg", spec: "Production Capacity: 27 Ltr. " + vacDesc },
+      { name: "KARCHER NT 22/1 Wet & Dry Vacuum Cleaner", price: "₹ 17,434", image: "images/karcher 22 1 cleaner.jpg", spec: "Production Capacity: 22 Ltr. " + vacDesc }
     ]
   },
   { 
@@ -147,7 +148,7 @@ const categoriesInfo = [
     id: "pneumatic-tools", 
     name: "Pneumatic Tools",
     products: [
-      { name: "Hand Tools Kit Set", price: "₹ 7,500", image: pneuImg, spec: pneuDesc },
+      { name: "Hand Tools Kit Set", price: "₹ 7,500", image: "images/hand tools.jpeg", spec: pneuDesc },
       { name: "Pneumatic Gun Socket", price: "₹ 2,400", image: pneuImg, spec: pneuDesc }
     ]
   },
@@ -218,7 +219,7 @@ const categoriesInfo = [
     id: "tool-trolleys", 
     name: "Tool Trolley",
     products: [
-      { name: "Tool Trolley", price: "₹ 11,800", image: trolleyImg, spec: trolleyDesc }
+      { name: "Tool Trolley", price: "₹ 11,800", image: "images/tool trolley.jpeg", spec: trolleyDesc }
     ]
   },
   { 
@@ -241,7 +242,7 @@ const categoriesInfo = [
     id: "nitrogen-flushing", 
     name: "Nitrogen Machines",
     products: [
-      { name: "Nitrogen Tyre Inflator", price: "Get Quote", image: nitroImg, spec: nitroDesc }
+      { name: "Nitrogen Tyre Inflator", price: "Get Quote", image: "images/nitrogen machine.png", spec: nitroDesc }
     ]
   }
 ];

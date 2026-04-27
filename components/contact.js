@@ -45,20 +45,44 @@ Head Office
 Branches
 </h3>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="p-6 bg-white dark:bg-slate-800 border-l-4 border-primary rounded shadow-sm">
-<h4 class="font-bold text-lg mb-2 text-slate-800 dark:text-slate-100">Pune Region</h4>
-<p class="text-sm text-slate-500 mb-4">Details to be updated</p>
+<div class="p-6 bg-white dark:bg-slate-800 border-l-4 border-primary rounded shadow-sm flex flex-col justify-between">
+<div>
+<h4 class="font-bold text-lg mb-2 text-slate-800 dark:text-slate-100">Jabalpur Branch</h4>
+<p class="text-sm text-slate-500 mb-4">265, Awadhpuri, Narmada Hills Road, Gwarighat Road, Jabalpur (M.P.)</p>
+</div>
+<div class="flex flex-col gap-2 mt-auto">
 <div class="flex items-center gap-2 text-accent font-semibold text-sm">
 <span class="material-symbols-outlined text-sm">call</span>
-Details to be updated
+<span class="text-slate-500 font-normal">Office:</span>
+<a href="tel:07314054547" class="hover:underline text-slate-700 dark:text-slate-300">0731-4054547</a>
 </div>
-</div>
-<div class="p-6 bg-white dark:bg-slate-800 border-l-4 border-primary rounded shadow-sm">
-<h4 class="font-bold text-lg mb-2 text-slate-800 dark:text-slate-100">Nashik Region</h4>
-<p class="text-sm text-slate-500 mb-4">Details to be updated</p>
 <div class="flex items-center gap-2 text-accent font-semibold text-sm">
-<span class="material-symbols-outlined text-sm">call</span>
-Details to be updated
+<span class="material-symbols-outlined text-sm">smartphone</span>
+<span class="text-slate-500 font-normal">Mobile:</span>
+<a href="tel:8871001430" class="hover:underline text-slate-700 dark:text-slate-300">8871001430</a>
+</div>
+</div>
+</div>
+<div class="p-6 bg-white dark:bg-slate-800 border-l-4 border-primary rounded shadow-sm flex flex-col justify-between">
+<div>
+<h4 class="font-bold text-lg mb-2 text-slate-800 dark:text-slate-100">Nagpur Branch</h4>
+<p class="text-sm text-slate-500 mb-4">House No. - 111/10, Sunder Town, Behind Tull College, Mahadula Nagpur</p>
+</div>
+<div class="flex flex-col gap-2 mt-auto">
+<div class="flex items-center gap-2 text-accent font-semibold text-sm">
+<span class="material-symbols-outlined text-sm">smartphone</span>
+<div class="flex items-center gap-2">
+<span class="text-slate-500 font-normal">Mobile:</span>
+<div class="flex gap-1">
+<a href="tel:9691577888" class="hover:underline text-slate-700 dark:text-slate-300">9691577888</a>,
+<a href="tel:8871001430" class="hover:underline text-slate-700 dark:text-slate-300">8871001430</a>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 text-accent font-semibold text-sm">
+<span class="material-symbols-outlined text-sm">mail</span>
+<a href="mailto:ssve.nagpur@gmail.com" class="hover:underline text-slate-700 dark:text-slate-300 lowercase">ssve.nagpur@gmail.com</a>
+</div>
 </div>
 </div>
 </div>
